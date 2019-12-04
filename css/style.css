@@ -8322,7 +8322,7 @@ template {
 
 html {
   font-family: 'Montserrat', 'Arial', sans-serif;
-  min-width: 375px;
+  min-width: 320px;
   font-size: 14px; }
 
 body {
@@ -8385,6 +8385,10 @@ button {
 @media (max-width: 992px) {
   html {
     font-size: 12px; } }
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2.1rem; } }
 
 .page {
   position: relative; }
@@ -8627,6 +8631,8 @@ textarea {
     max-width: 400px; } }
 
 @media (max-width: 576px) {
+  .main-page__head {
+    font-size: 30px; }
   .main-page__btn {
     margin-left: auto;
     margin-right: auto; } }
