@@ -8856,7 +8856,9 @@ table td {
   width: 100%; }
 
 .anti-gravel__table {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  max-width: 100%;
+  overflow: scroll; }
 
 .anti-gravel__car {
   position: relative; }
