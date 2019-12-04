@@ -8743,6 +8743,10 @@ textarea {
 table {
   font-family: 'Montserrat', 'Arial', sans-serif; }
 
+.table__wrapper {
+  max-width: 100%;
+  overflow-x: scroll; }
+
 table th {
   border-top: none !important;
   text-align: center;
@@ -8856,9 +8860,7 @@ table td {
   width: 100%; }
 
 .anti-gravel__table {
-  margin-bottom: 6rem;
-  max-width: 100%;
-  overflow: scroll; }
+  margin-bottom: 6rem; }
 
 .anti-gravel__car {
   position: relative; }
