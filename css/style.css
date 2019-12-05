@@ -8322,7 +8322,7 @@ template {
 
 html {
   font-family: 'Montserrat', 'Arial', sans-serif;
-  min-width: 375px;
+  min-width: 320px;
   font-size: 14px; }
 
 body {
@@ -8385,6 +8385,10 @@ button {
 @media (max-width: 992px) {
   html {
     font-size: 12px; } }
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2.1rem; } }
 
 .page {
   position: relative; }
@@ -8627,6 +8631,8 @@ textarea {
     max-width: 400px; } }
 
 @media (max-width: 576px) {
+  .main-page__head {
+    font-size: 30px; }
   .main-page__btn {
     margin-left: auto;
     margin-right: auto; } }
@@ -8709,8 +8715,8 @@ textarea {
 
 .polishing-page__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .polishing-page__car-wrap img {
     width: 50%;
@@ -8736,6 +8742,10 @@ textarea {
 
 table {
   font-family: 'Montserrat', 'Arial', sans-serif; }
+
+.table__wrapper {
+  max-width: 100%;
+  overflow-x: scroll; }
 
 table th {
   border-top: none !important;
@@ -8798,17 +8808,13 @@ table td {
   background-size: cover;
   background-position: right bottom; }
 
-@media (min-width: 1300px) {
-  .tinting-page__bg {
-    width: 28%; } }
-
 .tinting-page__car {
   position: relative; }
 
 .tinting-page__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .tinting-page__car-wrap img {
     width: 50%;
@@ -8816,21 +8822,13 @@ table td {
     -o-object-fit: cover;
        object-fit: cover; }
 
+@media (min-width: 1300px) {
+  .tinting-page__bg {
+    width: 28%; } }
+
 @media (max-width: 767px) {
   .tinting-page__bg {
     display: none; } }
-
-@media (max-width: 768px) {
-  .tinting-page__car-wrap {
-    position: relative;
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
-    text-align: center; }
-    .tinting-page__car-wrap img {
-      width: 100%;
-      height: auto;
-      -o-object-fit: cover;
-         object-fit: cover; } }
 
 .no-webp .anti-gravel__bg,
 .no-js .anti-gravel__bg {
@@ -8857,8 +8855,8 @@ table td {
 
 .anti-gravel__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .anti-gravel__car-wrap img {
     width: 50%;
