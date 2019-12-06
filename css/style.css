@@ -8643,7 +8643,8 @@ textarea {
 
 .gallery__slider {
   width: 100%;
-  margin-top: 40px; }
+  margin-top: 40px;
+  overflow: hidden; }
 
 .gallery__img {
   width: 800px;
@@ -8686,8 +8687,6 @@ textarea {
   .gallery__img {
     width: 80vw;
     height: 48vw;
-    min-width: 375px;
-    min-height: 185px;
     -o-object-fit: cover;
        object-fit: cover; }
   .gallery__slide {
@@ -8715,8 +8714,8 @@ textarea {
 
 .polishing-page__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .polishing-page__car-wrap img {
     width: 50%;
@@ -8785,8 +8784,6 @@ table td {
       font-size: 16px; } }
 
 @media (max-width: 730px) {
-  table__wrapper {
-    overflow-x: scroll; }
   table {
     width: 700px; }
     table td:last-child {
@@ -8808,17 +8805,13 @@ table td {
   background-size: cover;
   background-position: right bottom; }
 
-@media (min-width: 1300px) {
-  .tinting-page__bg {
-    width: 28%; } }
-
 .tinting-page__car {
   position: relative; }
 
 .tinting-page__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .tinting-page__car-wrap img {
     width: 50%;
@@ -8826,21 +8819,13 @@ table td {
     -o-object-fit: cover;
        object-fit: cover; }
 
+@media (min-width: 1300px) {
+  .tinting-page__bg {
+    width: 28%; } }
+
 @media (max-width: 767px) {
   .tinting-page__bg {
     display: none; } }
-
-@media (max-width: 768px) {
-  .tinting-page__car-wrap {
-    position: relative;
-    -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
-    text-align: center; }
-    .tinting-page__car-wrap img {
-      width: 100%;
-      height: auto;
-      -o-object-fit: cover;
-         object-fit: cover; } }
 
 .no-webp .anti-gravel__bg,
 .no-js .anti-gravel__bg {
@@ -8867,8 +8852,8 @@ table td {
 
 .anti-gravel__car-wrap {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(calc(-50% - 15px));
+          transform: translateX(calc(-50% - 15px));
   text-align: right; }
   .anti-gravel__car-wrap img {
     width: 50%;
